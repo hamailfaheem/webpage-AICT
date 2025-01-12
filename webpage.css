@@ -1,0 +1,830 @@
+/* Reset body and html margins and paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  margin: 0;
+}
+
+/* navigation bar section */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .top-bar,
+.navbar .bottom-bar {
+  padding: 5px 10px;
+}
+
+/* Top Bar Styling */
+.top-bar {
+  display: flex;
+  align-items: right ;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.top-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.top-menu li {
+  font-size: 16px; /* Slightly smaller font size for the top bar */
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.top-menu a:hover {
+  color: #5b5b56; /* Hover effect */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-button {
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(248, 241, 241);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #7b7a78; /* Button hover effect */
+}
+
+/* Bottom Bar Styling */
+.bottom-bar {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.bottom-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.bottom-menu li {
+  font-size: 22px; /* Slightly larger font size for the bottom bar */
+}
+
+.bottom-menu a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.bottom-menu a:hover {
+  color: rgba(0, 0, 0, 0.5); /* Hover effect */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.bottom-menu a:active {
+  color: #82807e; /* Click effect */
+}
+
+body {
+  padding-top: 0px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://www.stanford.edu/wp-content/uploads/2023/10/Hero-3-2-2048x1362.jpg') no-repeat center center/cover;
+  height: 100vh; /* Full viewport height */
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero Heading */
+.hero h1 {
+  font-size: 7rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparent background to see the hero image */
+  color: white;
+  z-index: 1000; /* Ensure it stays above the hero section */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*societal section*/
+.societal h1 {
+  text-align: center;
+  font-size: 3rem; /* Adjust the size as per your preference */
+  font-weight: bold; /* Optional: makes the text bolder */
+  margin-top: 20px; /* Optional: adds space above the heading */
+  margin-bottom: 20px; /* Optional: adds space below the heading */
+}
+
+/* Campus News Section */
+.news-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.news-container h1 {
+  font-size: 36px;
+  color: #8c1515;
+  margin-bottom: 10px;
+}
+
+.news-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.news-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+}
+
+.news-item h2 {
+  font-size: 18px;
+  color: #8c1515;
+  margin: 10px 0;
+}
+
+.news-item p {
+  font-size: 14px;
+  margin: 0 10px 10px;
+}
+/* Academics Grid */
+.academics-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+.academic-card {
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Fixed width */
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.academic-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.academic-card img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Round top corners */
+}
+
+.academic-content {
+  padding: 15px;
+}
+
+.academic-content h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.academic-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Academics Button Container */
+.academics-button-container {
+  text-align: center; /* Center the button inside the container */
+  margin-top: 20px;
+}
+
+/* Academics Button Styling */
+.academics-button {
+  display: inline-block;
+  background-color: #8c1515; /* Stanford's cardinal red */
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Hover Effect */
+.academics-button:hover {
+  background-color: #aa3c3c; /* Lighter shade of red for hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Research Section */
+.research {
+  text-align: center;
+  padding: 80px 20px; /* Increased padding for more space */
+  background-color: #f9f9f9;
+}
+
+.research h2 {
+  font-size: 42px; /* Increased font size for the title */
+  font-weight: bold;
+  margin-bottom: 20px; /* Added extra spacing below the title */
+  color: #ad1212;
+}
+
+.research p {
+  font-size: 20px; /* Increased font size for the description */
+  color: #555;
+  margin-bottom: 50px; /* Added more space below the description */
+}
+
+.research-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* Increased gap between stat items */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-bottom: 50px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 28px; /* Increased font size for stats headings */
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px; /* Added more space below headings */
+}
+
+.stat-item p {
+  font-size: 18px; /* Increased font size for stat descriptions */
+  color: #555;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.red-button {
+  background-color: #800000;
+  color: #fff;
+  padding: 15px 30px; /* Increased button size */
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px; /* Increased font size for the button text */
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.red-button:hover {
+  background-color: #a00000;
+}
+
+
+/* Events Section */
+.events {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.events h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #800000;
+  margin-bottom: 10px;
+}
+
+.events p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the card takes up the full height of its container */
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;  /* Set height as desired */
+  object-fit: cover;  /* Ensures the image fills the container without stretching */
+  object-position: center;  /* Keeps the focal point centered */
+}
+
+.event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.event-date span {
+  display: block;
+}
+
+.event-info {
+  padding: 20px;
+  flex-grow: 1; /* Ensures this section takes up remaining space */
+}
+
+.event-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #800000;
+  margin-bottom: 5px;
+}
+
+.event-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.red-button {
+  background-color: #800000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.red-button:hover {
+  background-color: #a00000;
+}
+
+.red-button:focus {
+  outline: 3px solid #ffcc00;  /* Accessibility: visible focus on button */
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .events h2 {
+    font-size: 28px;  /* Smaller title size on smaller screens */
+  }
+
+  .events p {
+    font-size: 16px;  /* Adjust paragraph font size for mobile */
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;  /* Single column layout for smaller screens */
+  }
+
+  .event-card {
+    margin: 10px;  /* Ensure some space between cards on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .red-button {
+    padding: 8px 15px;  /* Adjust button padding for smaller screens */
+    font-size: 14px;  /* Smaller font size for mobile buttons */
+  }
+}
+
+
+/* healthcare Grid */
+.healthcare-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+.healthcare-card {
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Fixed width */
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.healthcare-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.healthcare-card img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Round top corners */
+}
+
+.healthcare-content {
+  padding: 15px;
+}
+
+.healthcare-content h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.healthcare-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Campus Life Grid */
+.campuslife-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+.campuslife-card {
+  background-color: #fdfdfd; /* Light background */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Fixed width */
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+}
+
+.campuslife-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+.campuslife-card img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Round top corners */
+}
+
+.campuslife-content {
+  padding: 15px;
+}
+
+.campuslife-content h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #222; /* Slightly darker text */
+}
+
+.campuslife-content p {
+  font-size: 14px;
+  color: #555; /* Subtle contrast */
+}
+
+/* Admissions Section */
+
+.admissions-heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #a71717;
+  margin-bottom: 20px;
+}
+.admissions-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.admissions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .admissions-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.admissions-info {
+  flex: 1;
+  margin: 10px;
+}
+
+.admissions-info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.admissions-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.admissions-button-container {
+  margin-top: 20px;
+}
+
+.admissions-button {
+  display: inline-block;
+  background-color: #8c1515;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.admissions-button:hover {
+  background-color: #aa3c3c;
+}
+
+/* Section Styles */
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8c1515;
+}
+
+section p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* About Section */
+.about {
+  background-color: white;
+  padding: 40px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.about-column h3 {
+  color: #8C1515; /* Stanford Red */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-column li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.about-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.about-buttons button {
+  padding: 10px 20px;
+  background-color: #8C1515; /* Stanford Red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.about-buttons button:hover {
+  background-color: #6E1212; /* Darker Stanford Red */
+}
+
+
+/* Footer Section*/
+.footer {
+  background-color: #800000; /* Stanford red color */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-logo h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer-logo p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.footer-links,
+.footer-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-links a,
+.footer-info a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-info a:hover {
+  color: #ccc; /* Lighter hover color */
+}
+
+.footer-copy {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
